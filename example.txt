@@ -1,0 +1,334 @@
+# ::id bolt12_10474_1421.6 ::date 2012-12-07T07:50:17 ::annotator SDL-AMR-09 ::preferred
+# ::snt It is obvious that no social or political problems were left then, nor were sequelae that cause headaches to later generations.
+# ::save-date Fri Oct 20, 2017 ::file bolt12_10474_1421_6.txt
+(o / obvious-01
+      :ARG1 (a / and
+            :op1 (l / leave-17 :polarity -
+                  :ARG1 (o2 / or
+                        :op1 (p / problem
+                              :topic (s2 / society))
+                        :op2 (p3 / problem
+                              :topic (p2 / politics))))
+            :op2 (l2 / leave-17 :polarity -
+                  :ARG1 (s / sequela
+                        :ARG0-of (c / cause-01
+                              :ARG1 (h / headache
+                                    :beneficiary (g / generation
+                                          :time (a2 / after
+                                                :op1 t))))))
+            :time (t / then)))
+
+
+# generated AMR tree
+o
+├── /
+│   └── obvious-01
+└── :ARG1
+    └── a
+        ├── /
+        │   └── and
+        ├── :op1
+        │   └── l
+        │       ├── /
+        │       │   └── leave-17
+        │       ├── :ARG1
+        │       │   └── o2
+        │       │       ├── /
+        │       │       │   └── or
+        │       │       ├── :op1
+        │       │       │   └── p
+        │       │       │       ├── /
+        │       │       │       │   └── problem
+        │       │       │       └── :topic
+        │       │       │           └── s2
+        │       │       │               └── /
+        │       │       │                   └── society
+        │       │       └── :op2
+        │       │           └── p3
+        │       │               ├── /
+        │       │               │   └── problem
+        │       │               └── :topic
+        │       │                   └── p2
+        │       │                       └── /
+        │       │                           └── politics
+        │       └── :polarity
+        │           └── -
+        ├── :op2
+        │   └── l2
+        │       ├── /
+        │       │   └── leave-17
+        │       ├── :ARG1
+        │       │   └── s
+        │       │       ├── /
+        │       │       │   └── sequela
+        │       │       └── :ARG0-of
+        │       │           └── c
+        │       │               ├── /
+        │       │               │   └── cause-01
+        │       │               └── :ARG1
+        │       │                   └── h
+        │       │                       ├── /
+        │       │                       │   └── headache
+        │       │                       └── :beneficiary
+        │       │                           └── g
+        │       │                               ├── /
+        │       │                               │   └── generation
+        │       │                               └── :time
+        │       │                                   └── a2
+        │       │                                       ├── /
+        │       │                                       │   └── after
+        │       │                                       └── :op1
+        │       │                                           └── t
+        │       └── :polarity
+        │           └── -
+        └── :time
+            └── t
+                └── /
+                    └── then
+
+amr_vars = {'a2', 'g', 's', 'h', 'l', 'p3', 'p2', 'o2', 'a', 's2', 't', 'o', 'l2', 'p', 'c'}
+
+all_nodes = [Node(tag=o, identifier=root, data=None), Node(tag=/, identifier=b0f424a2-6b91-4efe-ba9d-1438cef9d83e, data=None), Node(tag=obvious-01, identifier=04b937ec-ae61-4cc8-b5ba-1f6cbcc504f1, data=None), Node(tag=:ARG1, identifier=58a3cf8a-25d0-4b00-81fd-959808891a0c, data=None), Node(tag=a, identifier=30dac4c9-3fef-4e9a-83ac-e46f1a299de1, data=None), Node(tag=/, identifier=3b6d6be2-dde8-41a3-a288-7b8a28576f80, data=None), Node(tag=and, identifier=fbc95e95-3e54-49d5-8cc7-8201ce5bf07a, data=None), Node(tag=:op1, identifier=433591ce-f12e-4612-9f22-3082f3755a2e, data=None), Node(tag=l, identifier=dee0c048-23a8-4048-bf53-106b0beb18c1, data=None), Node(tag=/, identifier=1b377e2a-5660-4168-ab24-b4527b707e2a, data=None), Node(tag=leave-17, identifier=381e7c75-47f1-4788-ade1-10ee583cf7d8, data=None), Node(tag=:polarity, identifier=f91b1762-4ad1-4085-865a-8d7c90959b54, data=None), Node(tag=-, identifier=46b4eae6-e619-449d-945f-9d0b0ca6ac30, data=None), Node(tag=:ARG1, identifier=894a43cc-771e-4766-918f-b05e58d4e1c7, data=None), Node(tag=o2, identifier=e7741a73-6317-43d7-83d6-5b86d3fac499, data=None), Node(tag=/, identifier=0a6fa4e5-cb7f-4296-bb4e-d781e7402426, data=None), Node(tag=or, identifier=e1b3b9c1-f284-42fd-9fb3-0141332c84b4, data=None), Node(tag=:op1, identifier=1eebe206-5e99-4f92-8297-e3f129170cfe, data=None), Node(tag=p, identifier=c8f2a25a-58cd-4c36-8868-b621f60f53cf, data=None), Node(tag=/, identifier=a7b27101-db33-4533-b022-e0338c69793c, data=None), Node(tag=problem, identifier=57af9f55-9828-456c-8fe7-4125bb3e9426, data=None), Node(tag=:topic, identifier=494c25a0-9a78-41a1-b042-6c1e9928ffad, data=None), Node(tag=s2, identifier=1b9631f8-3a63-44f2-aefa-c17146026863, data=None), Node(tag=/, identifier=60c56b43-8442-4e17-af32-7b17eacd0a1d, data=None), Node(tag=society, identifier=4bf9c4b2-a2f5-4e00-b442-bc00c7fd2a70, data=None), Node(tag=:op2, identifier=a7accbc8-6240-41a0-b122-589edcc7f355, data=None), Node(tag=p3, identifier=01934031-ac8c-4dd9-b288-08e5c98ee7b2, data=None), Node(tag=/, identifier=d0b2bb37-8943-4b58-976f-85ba2c1798ae, data=None), Node(tag=problem, identifier=48e998af-4ff7-4c7e-bacd-338ccc68fd22, data=None), Node(tag=:topic, identifier=253a5439-9f95-4c58-a925-5bc56e708fbb, data=None), Node(tag=p2, identifier=d9059c35-27d6-48cd-9ebb-4adf8acd8245, data=None), Node(tag=/, identifier=26c14a75-a6e2-42cb-9f8c-89745d904bd5, data=None), Node(tag=politics, identifier=2a66ce2a-01fb-427b-8294-87265803d307, data=None), Node(tag=:op2, identifier=b174527d-6532-4c83-a670-266d3f7d8e63, data=None), Node(tag=l2, identifier=155df48d-566c-496a-be95-afefb7f89fa5, data=None), Node(tag=/, identifier=25fa6db9-5c5c-4bd7-af17-5433d48fcd67, data=None), Node(tag=leave-17, identifier=58556e31-a65f-419a-a131-943e4ff9e080, data=None), Node(tag=:polarity, identifier=cea2de0f-21ad-4871-9e4e-5bbd2df744d6, data=None), Node(tag=-, identifier=7610e72c-a1ab-450f-909a-226eef1e286d, data=None), Node(tag=:ARG1, identifier=4ea6edcd-788e-4035-9d26-b1bb8f3544c2, data=None), Node(tag=s, identifier=a9c458b9-dd7b-4779-83ec-9dd222925bd3, data=None), Node(tag=/, identifier=fc383a59-ea07-4b61-ab0e-0ad2774ed8fb, data=None), Node(tag=sequela, identifier=356ca178-45e2-47d6-b6e6-5d118e378dfa, data=None), Node(tag=:ARG0-of, identifier=883bcd5a-2a22-4add-92aa-4f01dab27f0d, data=None), Node(tag=c, identifier=850d4cc1-c49a-45c0-a8ad-a4ac3b05ace7, data=None), Node(tag=/, identifier=7b611500-476a-441c-a472-4523dc3c585f, data=None), Node(tag=cause-01, identifier=74657ae7-dad2-46e6-accc-32905bf18ce9, data=None), Node(tag=:ARG1, identifier=5e3c754d-df51-45b5-b8c7-780dd5c00f37, data=None), Node(tag=h, identifier=b5eba34c-3986-4f80-a89c-9a77b92c9a8a, data=None), Node(tag=/, identifier=20941e9b-acb3-4826-bf8e-11d832142c6b, data=None), Node(tag=headache, identifier=92b9c1ee-c540-4b4d-a7cb-a61a189c7c1b, data=None), Node(tag=:beneficiary, identifier=0a3f349d-7118-4313-9ba7-b5612de60c1c, data=None), Node(tag=g, identifier=e94a1923-801d-4411-b968-1a589fb82bd0, data=None), Node(tag=/, identifier=fd5b4830-d598-4a41-bb19-e3b2f9fdb67d, data=None), Node(tag=generation, identifier=675644a4-3d21-4208-8d0d-c09b10d18ed4, data=None), Node(tag=:time, identifier=4694273f-39ed-4908-a34b-fa11d7b5f136, data=None), Node(tag=a2, identifier=6c503846-24e9-492e-808d-6a057dad1ca5, data=None), Node(tag=/, identifier=5122f0a2-aae3-4eef-a9ae-c484134f0f11, data=None), Node(tag=after, identifier=f41207c9-649f-41d6-8093-6441c8243c3b, data=None), Node(tag=:op1, identifier=6a171b00-0437-40d5-b258-e3b27e4c2eb8, data=None), Node(tag=t, identifier=2603a5e8-0ccb-4543-bfcf-914ebf36902f, data=None), Node(tag=:time, identifier=2de87b28-7825-4e2a-b4b7-65ec53169aa3, data=None), Node(tag=t, identifier=7c2c885f-6368-4ccb-a694-58943a4f3b45, data=None), Node(tag=/, identifier=1a8d7709-24d4-4031-9dca-0b37ed4b384d, data=None), Node(tag=then, identifier=378dfa23-bd59-44b7-9760-868803a23f84, data=None)]
+
+all_node_tags = ['o', '/', 'obvious-01', ':ARG1', 'a', '/', 'and', ':op1', 'l', '/', 'leave-17', ':polarity', '-', ':ARG1', 'o2', '/', 'or', ':op1', 'p', '/', 'problem', ':topic', 's2', '/', 'society', ':op2', 'p3', '/', 'problem', ':topic', 'p2', '/', 'politics', ':op2', 'l2', '/', 'leave-17', ':polarity', '-', ':ARG1', 's', '/', 'sequela', ':ARG0-of', 'c', '/', 'cause-01', ':ARG1', 'h', '/', 'headache', ':beneficiary', 'g', '/', 'generation', ':time', 'a2', '/', 'after', ':op1', 't', ':time', 't', '/', 'then']
+
+
+maskable_nodes = [Node(tag=obvious-01, identifier=15ee9741-4d92-4416-b165-fdff6096041a, data=None), Node(tag=:ARG1, identifier=1c2c287c-0e23-4f5e-8068-f5eaba86fc3c, data=None), Node(tag=and, identifier=c057e30f-1e71-4e11-8d75-8a62e018f5b8, data=None), Node(tag=:op1, identifier=161c10cc-67be-4f07-adfb-61f493e9d927, data=None), Node(tag=leave-17, identifier=6f29c19b-c643-4084-a33a-835c39412478, data=None), Node(tag=:polarity, identifier=24d6a63a-aaef-402d-b6a9-68b31f8fd7d3, data=None), Node(tag=:ARG1, identifier=e5a24305-12f8-4b5e-8f47-892b72080c65, data=None), Node(tag=or, identifier=69fda057-c745-48ed-88b1-8710e72a1a62, data=None), Node(tag=:op1, identifier=8942c847-d109-4c6c-a776-de8ceb194e64, data=None), Node(tag=problem, identifier=100876e1-e74b-4d7d-bb6c-792ab5504c10, data=None), Node(tag=:topic, identifier=5377c17d-0a26-4bc8-a8f3-7888d4aed4ce, data=None), Node(tag=society, identifier=42aa08e2-ceed-4aec-8f8d-61d2f7c2e05c, data=None), Node(tag=:op2, identifier=458c4c40-32ed-40a9-ba3f-4f6fa3287a15, data=None), Node(tag=problem, identifier=a71049ed-3f19-43fc-bba8-43fd8bbe9a57, data=None), Node(tag=:topic, identifier=157089d8-d313-461d-81fc-3a22e42b767c, data=None), Node(tag=politics, identifier=51db18d7-9a12-49eb-98c1-60276fa5f174, data=None), Node(tag=:op2, identifier=ca31b312-4dd7-4304-b6cd-8707164c60b0, data=None), Node(tag=leave-17, identifier=4c6a610c-dbb9-40e6-ad3c-f33dd55ceaf4, data=None), Node(tag=:polarity, identifier=a2279f48-ee48-4852-a4fb-66e9cea2af36, data=None), Node(tag=:ARG1, identifier=2fef7c11-785a-4a93-af77-d35a3922bae2, data=None), Node(tag=sequela, identifier=ddaa47aa-c5a8-4dcd-8c4e-6569366289e2, data=None), Node(tag=:ARG0-of, identifier=3607dc57-b3f1-4d89-93e6-a2c2defb558f, data=None), Node(tag=cause-01, identifier=312942b0-afee-4dcc-a016-ce151ce0482f, data=None), Node(tag=:ARG1, identifier=234933f9-2144-4d65-9c85-776a25c8cb43, data=None), Node(tag=headache, identifier=2456579d-5902-4662-94e7-cbde6882420f, data=None), Node(tag=:beneficiary, identifier=441d9f09-b2f9-44ea-a6fa-8f55407a052d, data=None), Node(tag=generation, identifier=96d0ebcb-8f2e-46ef-bdc2-a13b98f17e27, data=None), Node(tag=:time, identifier=f0b82d8a-0051-4938-9865-87ccf37efa9c, data=None), Node(tag=after, identifier=a6d6699a-2589-419b-adf9-536e7162e519, data=None), Node(tag=:op1, identifier=b4f2a088-6e75-48ed-b8d8-ac2f2de4c27f, data=None), Node(tag=:time, identifier=b73e87a0-9400-41db-9eca-8068a300d0bc, data=None), Node(tag=then, identifier=bbe27270-13d0-4589-aa12-829bcca10261, data=None)]
+
+maskable_node_tags = ['obvious-01', ':ARG1', 'and', ':op1', 'leave-17', ':polarity', ':ARG1', 'or', ':op1', 'problem', ':topic', 'society', ':op2', 'problem', ':topic', 'politics', ':op2', 'leave-17', ':polarity', ':ARG1', 'sequela', ':ARG0-of', 'cause-01', ':ARG1', 'headache', ':beneficiary', 'generation', ':time', 'after', ':op1', ':time', 'then']
+
+
+
+('o', [('/', 'obvious-01'), (':ARG1', ('a', [('/', 'and'), (':op1', ('l', [('/', 'leave-17'), (':polarity', '-'), (':ARG1', ('o2', [('/', 'or'), (':op1', ('p', [('/', 'problem'), (':topic', ('s2', [('/', 'society')]))])), (':op2', ('p3', [('/', 'problem'), (':topic', ('p2', [('/', 'politics')]))]))]))])), (':op2', ('l2', [('/', 'leave-17'), (':polarity', '-'), (':ARG1', ('s', [('/', 'sequela'), (':ARG0-of', ('c', [('/', 'cause-01'), (':ARG1', ('h', [('/', 'headache'), (':beneficiary', ('g', [('/', 'generation'), (':time', ('a2', [('/', 'after'), (':op1', 't')]))]))]))]))]))])), (':time', ('t', [('/', 'then')]))]))])
+o
+├── /
+│   └── obvious-01
+└── :ARG1
+    └── a
+        ├── /
+        │   └── and
+        ├── :op1
+        │   └── l
+        │       ├── /
+        │       │   └── leave-17
+        │       ├── :ARG1
+        │       │   └── o2
+        │       │       ├── /
+        │       │       │   └── or
+        │       │       ├── :op1
+        │       │       │   └── p
+        │       │       │       ├── /
+        │       │       │       │   └── problem
+        │       │       │       └── :topic
+        │       │       │           └── s2
+        │       │       │               └── /
+        │       │       │                   └── society
+        │       │       └── :op2
+        │       │           └── p3
+        │       │               ├── /
+        │       │               │   └── problem
+        │       │               └── :topic
+        │       │                   └── p2
+        │       │                       └── /
+        │       │                           └── politics
+        │       └── :polarity
+        │           └── -
+        ├── :op2
+        │   └── l2
+        │       ├── /
+        │       │   └── leave-17
+        │       ├── :ARG1
+        │       │   └── s
+        │       │       ├── /
+        │       │       │   └── sequela
+        │       │       └── :ARG0-of
+        │       │           └── c
+        │       │               ├── /
+        │       │               │   └── cause-01
+        │       │               └── :ARG1
+        │       │                   └── h
+        │       │                       ├── /
+        │       │                       │   └── headache
+        │       │                       └── :beneficiary
+        │       │                           └── g
+        │       │                               ├── /
+        │       │                               │   └── generation
+        │       │                               └── :time
+        │       │                                   └── a2
+        │       │                                       ├── /
+        │       │                                       │   └── after
+        │       │                                       └── :op1
+        │       │                                           └── t
+        │       └── :polarity
+        │           └── -
+        └── :time
+            └── t
+                └── /
+                    └── then
+
+('o', [('/', 'obvious-01'), (':ARG1', ('a', [('/', 'and'), (':op1', ('l', [('/', 'leave-17'), (':polarity', '-'), (':ARG1', ('o2', [('/', 'or'), (':op1', ('p', [('/', 'problem'), (':topic', ('s2', [('/', 'society')]))])), (':op2', ('p3', [('/', 'problem'), (':topic', ('p2', [('/', 'politics')]))]))]))])), (':op2', ('l2', [('/', 'leave-17'), (':polarity', '-'), (':ARG1', ('s', [('/', 'sequela'), (':ARG0-of', ('c', [('/', 'cause-01'), (':ARG1', ('h', [('/', 'headache'), (':beneficiary', ('g', [('/', 'generation'), (':time', ('a2', [('/', 'after'), (':op1', 't')]))]))]))]))]))])), (':time', ('t', [('/', 'then')]))]))])
+o
+├── /
+│   └── obvious-01
+└── :ARG1
+    └── a
+        ├── /
+        │   └── and
+        ├── :op1
+        │   └── l
+        │       ├── /
+        │       │   └── leave-17
+        │       ├── :ARG1
+        │       │   └── o2
+        │       │       ├── /
+        │       │       │   └── or
+        │       │       ├── :op1
+        │       │       │   └── p
+        │       │       │       ├── /
+        │       │       │       │   └── problem
+        │       │       │       └── :topic
+        │       │       │           └── s2
+        │       │       │               └── /
+        │       │       │                   └── society
+        │       │       └── :op2
+        │       │           └── p3
+        │       │               ├── /
+        │       │               │   └── problem
+        │       │               └── :topic
+        │       │                   └── p2
+        │       │                       └── /
+        │       │                           └── politics
+        │       └── :polarity
+        │           └── -
+        ├── :op2
+        │   └── l2
+        │       ├── /
+        │       │   └── leave-17
+        │       ├── :ARG1
+        │       │   └── s
+        │       │       ├── /
+        │       │       │   └── sequela
+        │       │       └── :ARG0-of
+        │       │           └── c
+        │       │               ├── /
+        │       │               │   └── cause-01
+        │       │               └── :ARG1
+        │       │                   └── h
+        │       │                       ├── /
+        │       │                       │   └── headache
+        │       │                       └── :beneficiary
+        │       │                           └── g
+        │       │                               ├── /
+        │       │                               │   └── generation
+        │       │                               └── :time
+        │       │                                   └── a2
+        │       │                                       ├── /
+        │       │                                       │   └── after
+        │       │                                       └── :op1
+        │       │                                           └── t
+        │       └── :polarity
+        │           └── -
+        └── :time
+            └── t
+                └── /
+                    └── then
+
+
+
+('a', [('/', 'and'), (':op1', ('d', [('/', 'die-01'), (':ARG1', ('p', [('/', 'person'), (':quant', ('m', [('/', 'many')]))]))])), (':op2', ('d2', [('/', 'destroy-01'), (':ARG1', ('p2', [('/', 'property'), (':quant', ('m2', [('/', 'much')]))]))])), (':op3', ('d3', [('/', 'disaster'), (':domain', ('i', [('/', 'it')])), (':mod', ('g', [('/', 'great')])), (':ARG1-of', ('c', [('/', 'clear-06'), (':degree', ('q', [('/', 'quite')]))]))]))])
+a
+├── /
+│   └── and
+├── :op1
+│   └── d
+│       ├── /
+│       │   └── die-01
+│       └── :ARG1
+│           └── p
+│               ├── /
+│               │   └── person
+│               └── :quant
+│                   └── m
+│                       └── /
+│                           └── many
+├── :op2
+│   └── d2
+│       ├── /
+│       │   └── destroy-01
+│       └── :ARG1
+│           └── p2
+│               ├── /
+│               │   └── property
+│               └── :quant
+│                   └── m2
+│                       └── /
+│                           └── much
+└── :op3
+    └── d3
+        ├── /
+        │   └── disaster
+        ├── :ARG1-of
+        │   └── c
+        │       ├── /
+        │       │   └── clear-06
+        │       └── :degree
+        │           └── q
+        │               └── /
+        │                   └── quite
+        ├── :domain
+        │   └── i
+        │       └── /
+        │           └── it
+        └── :mod
+            └── g
+                └── /
+                    └── great
+
+('a', [('/', 'and'), (':op1', ('d', [('/', 'die-01'), (':ARG1', ('p', [('/', 'person'), (':quant', ('m', [('/', 'many')]))]))])), (':op2', ('d2', [('/', 'destroy-01'), (':ARG1', ('p2', [('/', 'property'), (':quant', ('m2', [('/', 'much')]))]))])), (':op3', ('d3', [('/', 'disaster'), (':domain', ('i', [('/', 'it')])), (':mod', ('g', [('/', 'great')])), (':ARG1-of', ('c', [('/', 'clear-06'), (':degree', ('q', [('/', 'quite')]))]))]))])
+a
+├── /
+│   └── and
+├── :op1
+│   └── d
+│       ├── /
+│       │   └── die-01
+│       └── :ARG1
+│           └── p
+│               ├── /
+│               │   └── person
+│               └── :quant
+│                   └── m
+│                       └── /
+│                           └── many
+├── :op2
+│   └── d2
+│       ├── /
+│       │   └── destroy-01
+│       └── :ARG1
+│           └── p2
+│               ├── /
+│               │   └── property
+│               └── :quant
+│                   └── m2
+│                       └── /
+│                           └── much
+└── :op3
+    └── d3
+        ├── /
+        │   └── disaster
+        ├── :ARG1-of
+        │   └── c
+        │       ├── /
+        │       │   └── clear-06
+        │       └── :degree
+        │           └── q
+        │               └── /
+        │                   └── quite
+        ├── :domain
+        │   └── i
+        │       └── /
+        │           └── it
+        └── :mod
+            └── g
+                └── /
+                    └── great

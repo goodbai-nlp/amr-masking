@@ -1,0 +1,9 @@
+# <--------------
+# Linearizations
+# default setting, DFS + keep_wiki + no_recat 
+use_pointer_tokens: False
+raw_graph: False
+remove_wiki: False
+dereify: False
+collapse_name_ops: False
+use_recategorization: False
